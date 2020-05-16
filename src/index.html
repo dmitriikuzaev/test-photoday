@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body class="page__body">
     <div class="page__container">
         <div class="header">
@@ -13,12 +15,135 @@
             <div class="header__line"></div>
         </div>
         <div class="hero">
-            <img class="hero__img" src="./assets/images/hero.jpg"/>
+            <picture>
+                <source srcset="./assets/images/hero_768.jpg" media="(min-width: 768px)" />
+                <source srcset="./assets/images/hero_420.jpg" media="(min-width: 420px)" />
+                <img class="hero__img" src="./assets/images/hero.jpg" />
+            </picture>
             <div class="hero__date">
                 <div class="hero__date-day">21</div>
                 <div class="hero__date-month">сентября</div>
             </div>
+            <div class="hero__desc">
+                <p class="hero__desc-title">
+                    Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen.
+                </p>
+                <p class="hero__desc-author">
+                    Фото: Reuters
+                </p>
+            </div>
+        </div>
+        <div class="photos">
+            <div class="photos__item">
+                <img src="./assets/images/photo_1.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_2.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_3.jpg" alt="">
+            </div>
+            <div class="adwall-sm">
+                <img src="./assets/images/adidas-pic.jpg" alt="">
+            </div>
+            <div class="adwall-md">
+                <img src="./assets/images/cocacola-pic.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_4.jpg" alt="">
+            </div>
+            <div class="adwall">
+                <div class="adwall__img">
+                    <img src="./assets/images/theater-adpic.jpg" alt="">
+                </div>
+                <div class="adwall__content">
+                    <div class="adwall__type">Рекламный тизер</div>
+                    <h6 class="adwall__title">Театральная паутина</h6>
+                    <p class="adwall__text">Открытие новых сервисных
+                        центров немекого автопрома</p>
+                </div>
+            </div>
+            <div class="photos__item photos__item--date">
+                <div class="photos__date-day">20</div>
+                <div class="photos__date-month">сентября</div>
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_5.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_6.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_7.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_8.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_9.jpg" alt="">
+            </div>
+            <div class="photos__item photos__item--date">
+                <div class="photos__date-day">19</div>
+                <div class="photos__date-month">сентября</div>
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_10.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_11.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_12.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_13.jpg" alt="">
+            </div>
+            <div class="photos__item photos__item--date">
+                <div class="photos__date-day">18</div>
+                <div class="photos__date-month">сентября</div>
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_14.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_15.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_16.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_17.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_18.jpg" alt="">
+            </div>
+            <div class="photos__item photos__item--date">
+                <div class="photos__date-day">17</div>
+                <div class="photos__date-month">сентября</div>
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_19.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_20.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_21.jpg" alt="">
+            </div>
+            <div class="photos__item">
+                <img src="./assets/images/photo_22.jpg" alt="">
+            </div>
+        </div>
+        <div class="paginator">
+            <span class="paginator__text">Страницы:</span>
+            <a href="#" class="paginator__num paginator__num--active">1</a>
+            <a href="#" class="paginator__num">2</a>
+            <a href="#" class="paginator__num">3</a>
+            <a href="#" class="paginator__num">4</a>
+            <a href="#" class="paginator__next">Следующая</a>
         </div>
     </div>
+
 </body>
+
 </html>
