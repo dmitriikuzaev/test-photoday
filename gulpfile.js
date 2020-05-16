@@ -2,6 +2,7 @@ const gulp = require("gulp");
 const less = require("gulp-less");
 const browserSync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
+const autoprefixer = require("gulp-autoprefixer");
 
 const src_folder = "./src/";
 const src_assets_folder = "./src/assets/";
@@ -24,6 +25,11 @@ gulp.task("less", () => {
       since: gulp.lastRun("less"),
     })
     .pipe(less())
+    .pipe(
+      autoprefixer({
+        browsers: ["last 4 versions"],
+      })
+    )
     .pipe(gulp.dest(dist_assets_folder + "css"))
     .pipe(browserSync.stream());
 });
